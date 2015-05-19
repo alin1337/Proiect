@@ -17,6 +17,11 @@
         <property name="loginTimeout" value="60"/>
     </bean>
 
+    <bean id="Api_AccountManager"
+          class="com.ralukat.pcweb.api.Api_AccountManager">
+        <property name="dataSource"  ref="dataSource" />
+    </bean>
+
     <!-- view controller -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
